@@ -10,7 +10,7 @@ Implementation
 
 It uses jquery and jqzoom by Marco Renzi (http://www.mind-projects.it/projects/jqzoom/) for zoom functionality.
 
-Default options used for jqzoom
+Default options used for jqzoom. Image size used for zoom is 1000X1000 px. 
 
 		var options = {
 					zoomType: 'standard',
@@ -37,7 +37,7 @@ Now bundle up with:
 
     bundle
     
-Next, run the install generator to append the spree_imagezoom js and css 
+Next, run the install generator to append the spree_imagezoom js and css
 
     rails g spree_imagezoom:install
     
