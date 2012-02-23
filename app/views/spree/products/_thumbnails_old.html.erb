@@ -1,0 +1,22 @@
+<!-- no need for thumnails unless there is more then one image -->
+<% if product.images.size > 1 %>
+  <ul id="product-thumbnails" class="thumbnails inline" data-hook>
+		<% n = 0 %>
+		<% product.images.each do |i| %>
+			<% classZoom = n > 0  ? "" : "zoomThumbActive" %>
+			<% n=+1 %>	
+      <li class="tmb-all" id="tmb-<%= i.id.to_s %>"><%= link_to image_tag(i.attachment.url(:mini)), i.attachment.url(:product), :rel => "{gallery: 'product-gallery', smallimage: '"  + i.attachment.url(:product) + "',largeimage: '" + i.attachment.url(:original) + "'}", :class => classZoom %></li>
+    <% end %>
+    <% if @product.has_variants?
+      @variants.each do |v|
+        if v.available?
+          v.images.each do |i| %>
+            <li class="vtmb-<%= v.id.to_s %> vtmb" id="tmb-<%= i.id.to_s %>"><%= link_to image_tag(i.attachment.url(:mini)), i.attachment.url(:product), :rel => "{gallery: 'product-gallery', smallimage: '"  + i.attachment.url(:product) + "',largeimage: '" + i.attachment.url(:original) + "'}" %></li>
+          <%
+          end
+        end
+      end
+    end
+    %>
+  </ul>
+<% end %>

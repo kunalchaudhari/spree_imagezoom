@@ -1,0 +1,6 @@
+<% if image %> 
+	<%= image_tag image.attachment.url(:product), :title => "Hello", :itemprop => "description" %>
+<% else %>
+  	<a href="<%= @product.images.first.attachment.url(:original) %>" rel="product-gallery" class="spree_jqzoom" title="<%= @product.name %>"><%= product_image(@product, :itemprop => "image") %></a>
+<% end %>
+<div class="clearfix"></div>
