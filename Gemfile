@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gemspec
 
-gem 'spree', '1.1.1'
+gem 'spree', '1.2.0'
 gem 'sqlite3'
 
 group :test do
@@ -17,6 +17,3 @@ if RUBY_VERSION < "1.9"
 else
   gem "ruby-debug19"
 end
-
-
-

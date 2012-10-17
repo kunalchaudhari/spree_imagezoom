@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_imagezoom'
-  s.version     = '1.1.1'
+  s.version     = '1.2.0'
   s.summary     = 'Product image zoom facility in SpreeCommerce'
   s.description = 'Product image zoom facility in SpreeCommerce'
   s.required_ruby_version = '>= 1.8.7'
@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 1.1.1'  
+  s.add_dependency 'spree_core', '~> 1.2.0'
 end
