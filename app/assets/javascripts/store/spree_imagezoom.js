@@ -1,4 +1,3 @@
-//= require store/spree_core
 /*!
  * jQzoom Evolution Library v2.3  - Javascript Image magnifier
  * http://www.mind-projects.it
