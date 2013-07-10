@@ -1,14 +1,6 @@
 /*
  *= require store/spree_core
 */
-.spree_jqzoom{
-  display: block;
-  width: 240px;
-  margin: 0 auto;
-}
-
-img, object, embed {max-width: none;}
-
 .zoomPad{
 	position:relative;
 	float: left;
