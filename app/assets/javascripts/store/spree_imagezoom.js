@@ -740,7 +740,7 @@ $(document).ready(function(){
             alwaysOn:false,
             zoomWidth: 600,
             zoomHeight: 500,
-            xOffset:50,
+            xOffset:0,
             yOffset:0,
             position:'left',  
             showEffect : 'fadein',  
