@@ -1,0 +1,4 @@
+<a href='<%= @product.images.empty? ? "javascript:void(0);" : @product.images.first.attachment.url(:large) %>' title='<%= @product.name %>' rel='product-gallery' class='<%= @product.images.empty? ? "javascript:void(0);" : "spree_jqzoom" %>'>
+  <%= render_original -%>
+</a>
+<div class='clearfix'></div>
